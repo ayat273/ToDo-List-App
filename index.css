@@ -1,0 +1,104 @@
+*{
+box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 600px;
+    margin: 30px auto 0;
+    background-color: #f6f6f6;
+}
+.container .add {
+    padding: 15px;
+    background-color: #009688;
+    position: relative;
+}
+.container .add input {
+    display:inline-block;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: calc(100% - 15px);
+    padding: 10px 15px;
+    font-size: 20px;
+    border: none;
+}
+.container .add input:focus{
+    outline: none;
+}
+.container .add .plus {
+    position: absolute;
+    height: 43px;
+    width: 43px;
+    line-height: 43px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #009688;
+    right: 12px;
+    font-size: 38px;
+    cursor:  pointer;
+    transition: transform 0.3s;
+}
+.container .add .plus:hover {
+    transform: rotate(90deg);
+}
+.container .content {
+    padding: 15px;
+}
+.container .content .no-message {
+    color: #777;
+    font-size: 15px;
+}
+.container .content > span {
+    display: block;
+    background-color: #fff;
+    padding: 10px;
+}
+.container .content > span:not(:last-child) {
+    margin-bottom: 10px;
+}
+.container .content .box .delete {
+    float: right;
+    border-radius: 4px;
+    padding: 4px 10px;
+    background-color: #e91e63;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.container .content .box.finished {
+    text-decoration: line-through;
+}
+.stats {
+    font-size: 12px;
+    width: 600px;
+    overflow: hidden;
+    margin: 10px auto;
+}
+.stats .count {
+width: 50%;
+float: left;
+padding: 10px;
+}
+.stats .completed {
+    width: 50%;
+    float: right;
+    padding: 10px;
+    text-align: right;
+}
+.stats .count span,
+.stats .completed span {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 1px 5px;
+    border-radius: 4px;
+    color: #fff;
+}
+.stats .count span {
+    background-color: #e91e63;
+}
+.stats .completed span {
+    background-color: #03a9f4; 
+}
